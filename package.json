@@ -1,0 +1,22 @@
+{
+  "name": "scrapy",
+  "version": "1.0.0",
+  "description": "using scrapy and python3 to crawl an amazon page for unique reviews and product description information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reburke286/scrapy.git"
+  },
+  "author": "Becca Burke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reburke286/scrapy/issues"
+  },
+  "homepage": "https://github.com/reburke286/scrapy#readme",
+  "dependencies": {
+    "mongoose": "^6.1.7"
+  }
+}
