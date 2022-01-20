@@ -8,5 +8,28 @@ class GoProSpider(scrapy.Spider):
     ]
 
     def parse(self, response):
-        next_page = response.css(
-            '#cm_cr-pagination_bar li.a-last a::attr(href)').get()
+        review_id = response.css("div.aok-relative::attr(id)").extract()
+        title = response.css("a.review-title span::text").extract()
+        date = response.css(
+            "div.aok-relative span.review-date::text").extract()
+        rating = response.css(
+            "a.a-link-normal span.a-icon-alt::text").extract()
+        # need to figure out why I can't get text after <br>
+        text = response.css(
+            "span.review-text-content span::text").extract()
+        for info in zip(review_id, title, date, rating, text):
+            scraped_info = {
+                'review_id': info[0],
+                'title': info[1],
+                'date': info[2],
+                'rating': info[3],
+                'text': info[4:]
+            }
+
+            yield scraped_info
+
+        # next_page = response.css(
+        #     '#cm_cr-pagination_bar li.a-last a::attr(href)').get()
+        # if next_page is not None:
+        #     next_page = response.urljoin(next_page)
+        #     yield scrapy.Request(next_page, callback=self.parse)
