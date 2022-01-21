@@ -66,10 +66,16 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'gopro_project.pipelines.GoproProjectPipeline': 300,
-# }
+ITEM_PIPELINES = {
+    'gopro_project.pipelines.GoproProjectPipeline': 300,
+}
 
+# ITEM_PIPELINES = ['gopro_project.pipelines.MongoDBPipeline', ]
+
+# MONGODB_SERVER = "localhost"
+# MONGODB_PORT = 27017
+# MONGODB_DB = "amazon"
+# MONGODB_COLLECTION = "gopro"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
