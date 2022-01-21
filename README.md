@@ -30,6 +30,13 @@ To do this, you may need to select a Python Interpreter. In VSCode this is done 
 
 After the scraper crawls the sites it will insert the information into the amazon database.
 
+## What Success Looks Like
+
+Below we see a couple images from the created db called 'amazon' and the 2 collections inside it that were generated from the call:
+![Product_Info Data](https://github.com/reburke286/scrapy/blob/main/prod_info_coll.jpg?raw=true)
+![Product_Info Data]("/prod_info_coll.JPG")
+![Last Page of Review Collection](https://github.com/reburke286/scrapy/blob/main/reviews_coll_pg1.jpg?raw=true)
+
 ## Future Goals
 
 Next steps for this project are building out the front end and using CRUD operations on the data.
