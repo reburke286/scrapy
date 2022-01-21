@@ -19,7 +19,9 @@ NEWSPIDER_MODULE = 'gopro_project.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'gopro_project (+http://www.yourdomain.com)'
+# USER_AGENT = 'gopro_project (http://www.amazon.com)'
+# USER_AGENT = 'gopro_project (Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36)'
+
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
