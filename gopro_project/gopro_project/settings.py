@@ -13,9 +13,9 @@ SPIDER_MODULES = ['gopro_project.spiders']
 NEWSPIDER_MODULE = 'gopro_project.spiders'
 
 # Export as Json file
-# FEED_FORMAT = "json"
+FEED_FORMAT = "json"
 # FEED_EXPORT_ENCODING: 'utf-8'
-# FEED_URI = "gopro.json"
+FEED_URI = "gopro.json"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
