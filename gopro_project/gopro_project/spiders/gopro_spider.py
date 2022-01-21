@@ -7,6 +7,10 @@ class GoProSpider(scrapy.Spider):
         'https://www.amazon.com/GoPro-Fusion-Waterproof-Digital-Spherical/dp/B0792MJLNM/ref=sr_1_3?crid=D3C7EDM435E7&amp&keywords=gopro+fusion&amp&qid=1550442454&amp&s=electronics&amp&sprefix=GoPro+Fu%2Celectronics%2C1332&amp&sr=1-3',
     ]
 
+    custom_settings = {
+        'FEED_URI': 'product_info.json'
+    }
+
     def parse(self, response):
         # defining some variables before the yield that need to be further manipulated
         source = response.css('title::text').get()
