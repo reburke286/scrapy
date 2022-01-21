@@ -14,6 +14,7 @@ NEWSPIDER_MODULE = 'gopro_project.spiders'
 
 # Export as Json file
 # FEED_FORMAT = "json"
+# FEED_EXPORT_ENCODING: 'utf-8'
 # FEED_URI = "gopro.json"
 
 
@@ -67,11 +68,13 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'gopro_project.pipelines.GoproProjectPipeline': 300,
+    'gopro_project.pipelines.ReviewsPipeline': 300,
+    'gopro_project.pipelines.InfoPipeline': 300,
 }
 
 # ITEM_PIPELINES = ['gopro_project.pipelines.MongoDBPipeline', ]
 
+# MONGO_URI = "localhost", 27017
 # MONGODB_SERVER = "localhost"
 # MONGODB_PORT = 27017
 # MONGODB_DB = "amazon"
