@@ -33,9 +33,18 @@ After the scraper crawls the sites it will insert the information into the amazo
 ## What Success Looks Like
 
 Below we see a couple images from the created db called 'amazon' and the 2 collections inside it that were generated from the call:
-![Product_Info Data](https://raw.githubusercontent.com/reburke286/scrapy/main/prod_info_coll.jpg)
+
+### Product Info Collection
+
+![Product_Info Data](https://raw.githubusercontent.com/reburke286/scrapy/main/installation/prod_info_coll.jpg)
+
+### First Page of Review Collection
+
 ![First Page of Review Collection](https://raw.githubusercontent.com/reburke286/scrapy/main/installation/reviews_coll_pg1.JPG)
-![Last Page of Review Collection](https://raw.githubusercontent.com/reburke286/scrapy/main/installation/reviews_coll_pg1.JPG)
+
+### Last Page of Review Collection
+
+![Last Page of Review Collection](https://raw.githubusercontent.com/reburke286/scrapy/main/installation/review_col_pg8.JPG)
 
 ## Future Goals
 
